@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1100px;
+}
+.Login-block {
+    display: flex;
+    margin-top: 40px;
+    a{
+        text-decoration: none;
+    }
+}
+
+.Login-block-navi {
+    flex-basis: 50%;
+}
+
+.Login-block-img {
+    flex-basis: 50%;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.Login-block-navi-logo {
+    span:nth-child(1) {
+        font-family: 'Arvo', serif;
+        background-color: #edbd8f;
+        font-size: 25px;
+        padding: 5px;
+        border-radius: 3px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transform: rotate(-5deg);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    span:nth-child(2) {
+        font-family: 'Arvo', serif;
+        background-color: #0a3d62;
+        color: white;
+        font-size: 25px;
+        padding: 5px;
+        border-radius: 3px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transform: rotate(-5deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.Login-block-navi-text {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(89, 87, 87);
+    margin: 35px 0 30px 0;
+    font-size: 27px;
+    width: 370px;
+}
+
+.Login-block-navi-social {
+    display: flex;
+    gap: 15px;
+
+    a {
+        button{
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 16px;
+            font-family: 'Rubik', sans-serif;
+            cursor: pointer;
+        }       
+        i {
+            padding: 0 8px 0 0;
+            font-size: 18px;
+        }       
+    }
+    #facebook {
+        background-color: #1877F2;
+    }
+
+    #google {
+        background-color: #df4930;
+    }
+}
+
+.little-text {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    margin: 23px 25px 20px 190px;
+    // text-align: center;
+    font-weight: 400;
+}
+
+.Login-navi-inner-email {
+    p {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        color: rgb(158, 158, 158);
+    }
+
+    input {
+        border: none;
+        outline: none;
+        padding: 8px 10px 8px 0;
+        font-size: 18px;
+        width: 390px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        border-bottom: 2px solid transparent;
+        background-image: linear-gradient(to right, #edbd8f, #0a3d62);
+        background-size: 100% 2px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+
+.Login-navi-inner-pass {
+    margin-top: 25px;
+
+    p {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        color: rgb(158, 158, 158);
+    }
+
+    input {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 0;
+        font-size: 18px;
+        width: 390px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        border-bottom: 2px solid transparent;
+        background-image: linear-gradient(to right, #edbd8f, #0a3d62);
+        background-size: 100% 2px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+
+.Login-navi-inner-forget {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 25px 0;
+    width: 390px;
+    .show-pass {        
+        span {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            padding-left: 5px;
+        }
+    }
+    a{
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        color: #1877F2;
+    }
+}
+.Login-navi-inner-btn{
+    display: flex;
+    gap: 30px;
+}
+#login-btn{
+    padding: 10px 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    background:#0a3d62;
+}
+#sign-btn{
+    padding: 8px 33px;
+    border-radius: 5px;
+    border: 2px solid rgb(158, 158, 158);
+    outline: none;    
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    background:transparent;       
+}
+
+.Login-block-navi-bottom{
+    margin-top: 30px;
+    font-family: 'Rubik', sans-serif;
+    p{
+        color:rgb(158, 158, 158);
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 89, 255);
+    }
+    span{
+        color: black;
+    }
+}
+.error{
+    color: rgba(213, 32, 32, 0.91);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size:13px;
+    padding-top: 20px;
+}

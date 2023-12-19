@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.sign-block {
+    display: flex;
+    margin-top: 30px;
+    align-items: flex-start;
+    gap: 50px;
+    p{
+        margin: 0;
+    }
+}
+
+.sign-block-img {
+    flex-basis: 50%;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.sign-block-img-logo {
+    span:nth-child(1) {
+        font-family: 'Arvo', serif;
+        background-color: #edbd8f;
+        font-size: 25px;
+        padding: 5px;
+        border-radius: 3px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transform: rotate(-5deg);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    span:nth-child(2) {
+        font-family: 'Arvo', serif;
+        background-color: #0a3d62;
+        color: white;
+        font-size: 25px;
+        padding: 5px;
+        border-radius: 3px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transform: rotate(-5deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.sign-block-navi-text {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(89, 87, 87);
+    font-size: 27px;
+    width: 370px;
+    margin-bottom: 30px;
+}
+
+
+.sign-block-navi-social {
+    display: flex;
+    gap: 15px;
+
+    a {
+        button {
+            width: 250px;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 16px;
+            font-family: 'Rubik', sans-serif;
+            cursor: pointer;
+        }
+
+        i {
+            padding: 0 8px 0 0;
+            font-size: 18px;
+        }
+    }
+
+    #facebook {
+        background-color: #1877F2;
+    }
+
+    #google {
+        background-color: #df4930;
+    }
+}
+
+.sign-little-text {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    margin: 15px 0px 15px 240px;
+    // text-align: center;
+    font-weight: 400;
+}
+
+.sign-block-navi-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 25px 0 0 0;
+}
+
+.sign-navi-inner-username {
+    height: 65px;
+    width: 350px;
+
+    p {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        color: rgb(158, 158, 158);
+    }
+
+    input {
+        border: none;
+        outline: none;
+        padding: 5px 10px 5px 0;
+        font-size: 18px;
+        width: 350px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        border-bottom: 2px solid transparent;
+        background-image: linear-gradient(to right, #edbd8f, #0a3d62);
+        background-size: 100% 2px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+
+.sign-navi-inner-email {
+    height: 65px;
+    width: 350px;
+
+    p {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        color: rgb(158, 158, 158);
+    }
+
+    input {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 0;
+        font-size: 18px;
+        width: 350px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        border-bottom: 2px solid transparent;
+        background-image: linear-gradient(to right, #edbd8f, #0a3d62);
+        background-size: 100% 2px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+
+.sign-navi-inner-pass {
+    position: relative;
+    width: 350px;
+    height: 65px;
+
+    p {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        color: rgb(158, 158, 158);
+    }
+
+    input {
+
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 0;
+        font-size: 18px;
+        width: 350px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        border-bottom: 2px solid transparent;
+        background-image: linear-gradient(to right, #edbd8f, #0a3d62);
+        background-size: 100% 2px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    #sign-pass-log {
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+    }
+}
+
+.sign-error {
+    color: rgba(213, 32, 32, 0.91);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#signUp_btn {
+    padding: 8px 33px;
+    border-radius: 5px;
+    background-color: #edbd8f;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sign-block-navi-login {
+    margin-top: 25px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    a{
+        color: #1877F2;
+        
+    }
+}
+.show-pass {        
+    span {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        padding-left: 5px;
+    }
+}

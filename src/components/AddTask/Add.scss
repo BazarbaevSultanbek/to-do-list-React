@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+.sub-module-block {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(51, 49, 49, 0.74);
+  z-index: 2;
+  .sub-module-inner {
+    position: relative;
+    background-color: whitesmoke;
+    width: 280px;
+    height: 160px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #module-cancel {
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      right: 20px;
+    }
+    p {
+      font-family: "Rubik", sans-serif;
+    }
+    input {
+      margin-top: 15px;
+      background-color: rgba(250, 250, 250, 0);
+      border: 1px solid rgb(165, 165, 165);
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+      width: 250px;
+      height: 40px;
+      padding: 0 10px;
+      font-size: 15px;
+      font-family: "Rubik", sans-serif;
+      outline: none;
+    }
+    #add-sub {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      background-color: #ffd43b;
+      border: none;
+      color: #525252;
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      outline: none;
+    }
+  }
+}
+
+.Add-container {
+  margin: 0 auto;
+}
+
+.Add-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(244, 244, 244);
+  border-radius: 9px;
+  padding: 15px;
+  height: 690px;
+  width: 328px;
+}
+
+.Add-block-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-family: "Lexend Deca", sans-serif;
+    color: #444444ff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  button {
+    border: none;
+    background: none;
+    color: #444444ff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
+
+.Add-block-task {
+  input {
+    background-color: rgba(250, 250, 250, 0);
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+    width: 298px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: "Rubik", sans-serif;
+    outline: none;
+    color: #242424;
+  }
+}
+
+.Add-block-desc {
+  textarea {
+    background-color: rgba(250, 250, 250, 0);
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+    width: 100% !important;
+    height: 80px !important;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-family: "Rubik", sans-serif;
+    outline: none;
+    color: #242424;
+  }
+}
+
+.Add-block-navi {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      line-height: 35px;
+
+      span {
+        font-family: "Lexend Deca", sans-serif;
+      }
+
+      select {
+        background-color: rgba(250, 250, 250, 0);
+        border: 1px solid rgb(223, 222, 222);
+        border-radius: 5px;
+        width: 120px;
+        padding: 0 3px;
+        height: 30px !important;
+        font-size: 16px;
+        font-family: "Rubik", sans-serif;
+        outline: none;
+        color: #7c7c7c;
+      }
+
+      input {
+        background-color: rgba(250, 250, 250, 0);
+        border: 1px solid rgb(223, 222, 222);
+        border-radius: 5px;
+        padding: 0 3px;
+        width: 120px;
+        height: 30px !important;
+        font-size: 15px;
+        font-family: "Rubik", sans-serif;
+        outline: none;
+        color: #7c7c7c;
+      }
+    }
+    #time {
+      line-height: 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      #time_input {
+        width: 30px;
+        height: 10px;
+        text-align: center;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.Add-block-sub {
+  margin-top: 15px;
+
+  h2 {
+    font-family: "Lexend Deca", sans-serif;
+    color: #444444;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .Add-block-sub-plus {
+    padding: 10px 0 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(223, 222, 222);
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+
+    i {
+      color: #7c7c7c;
+    }
+
+    span {
+      font-size: 15px;
+      color: #7c7c7c;
+      font-family: "Lexend Deca", sans-serif;
+      text-transform: capitalize;
+    }
+  }
+
+  .Add-block-sub-list {
+    ul {
+      height: 100px;
+      overflow: scroll;
+      margin: 10px 0 0 15px;
+      padding: 0 0 0 5px;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        position: absolute;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        scroll-behavior: auto;
+        background: #7d7d7d;
+        border-radius: 5px;
+      }
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 20px;
+      padding: 10px 10px 10px 0px;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      span {
+        font-family: "Lexend Deca", sans-serif;
+      }
+      button {
+        border: none;
+        background: none;
+        color: #444444ff;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.Add-block-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+  .delete-button {
+    background-color: transparent;
+    font-family: "Lexend Deca", sans-serif;
+    color: #525252;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid rgb(201, 200, 200);
+    outline: none;
+  }
+  .save-button {
+    background-color: #ffd43b;
+    border: none;
+    color: #525252;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    outline: none;
+  }
+}

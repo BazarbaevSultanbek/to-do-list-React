@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+.Settings-container {
+  margin: 0;
+  padding: 0 15px;
+  max-width: 1100px;
+}
+.Settings-logo {
+  font-family: "Lexend Deca", sans-serif;
+  color: #212529;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.Settings-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+.Settings-block-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(235, 235, 235);
+  width: 500px;
+  height: 50px;
+  padding: 10px 15px;
+  cursor: pointer;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    i {
+      color: #254361;
+    }
+    span {
+      font-size: 174x;
+      font-family: "Lexend Deca", sans-serif;
+    }
+  }
+  button {
+    background: none;
+    border: none;
+    color: #254361;
+  }
+}
+.Settings-block-theme {
+  border: 1px solid rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 50px;
+  padding: 10px 15px;
+  div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    i {
+      color: #254361;
+    }
+    span {
+      color: #212529;
+      font-size: 18px;
+      font-family: "Lexend Deca", sans-serif;
+    }
+  }
+  select {
+    outline: none;
+    width: 100px;
+    font-family: "Lexend Deca", sans-serif;
+    option {
+      font-family: "Lexend Deca", sans-serif;
+      display: flex;
+      span {
+        position: relative;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+.Settings-block-donate,
+.Settings-block-share,
+.Settings-block-feedback,
+.Settings-block-privacy {
+  cursor: pointer;
+  border: 1px solid rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+  height: 50px;
+  padding: 10px 15px;
+  i {
+    color: #254361;
+  }
+  span {
+    color: #212529;
+    font-size: 17px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+}
+
+.Settings-module-block {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(99, 99, 99, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Settings-module-inner {
+  background-color: white;
+  width: 450px;
+  height: 500px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Settings-module-inner-navi {
+  h4 {
+    font-family: "Lexend Deca", sans-serif;
+  }
+  div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+    label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding-left: 5px;
+      i {
+        color: #4c4d4e;
+      }
+      color: #4c4d4e;
+      font-family: "Lexend Deca", sans-serif;
+    }
+    input {
+      background-color: rgba(250, 250, 250, 0);
+      border: 1px solid rgb(235, 235, 235);
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+      width: 298px;
+      height: 40px;
+      padding: 0 15px;
+      font-size: 15px;
+      font-family: "Rubik", sans-serif;
+      outline: none;
+      color: #242424;
+    }
+  }
+  .btn-class {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    #cancel_btn {
+      background-color: transparent;
+      font-family: "Lexend Deca", sans-serif;
+      color: #525252;
+      font-weight: 600;
+      font-size: 14px;
+      border: 1px solid rgb(201, 200, 200);
+      outline: none;
+    }
+    #save_btn {
+      background-color: #ffd43b;
+      border: none;
+      color: #525252;
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      outline: none;
+    }
+  }
+}
+.profile-pass {
+  position: relative;
+  #profile-pass-log {
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+  }
+}
+.profile-error {
+  color: rgba(213, 32, 32, 0.91);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  padding-top: 10px;
+  margin: 0;
+}
