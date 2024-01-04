@@ -5,10 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Add.scss'
 
 
-//// checked in lists : done
-//// upcoming : done
-//// addd time
-//// sticky wall
 
 function Add({ ShowAddTask, SetShowAddTask, selectedTask, setSelectedTask }) {
 
@@ -18,7 +14,6 @@ function Add({ ShowAddTask, SetShowAddTask, selectedTask, setSelectedTask }) {
     let subTasks = useSelector(state => state?.lists.subtasks)
     const dispatch = useDispatch()
     ////
-    console.log(tasks);
 
     /// exist task constants
     const [task, setTask] = useState('')

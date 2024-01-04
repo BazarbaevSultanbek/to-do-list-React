@@ -77,7 +77,10 @@ function MainPage() {
     localStorage.removeItem("CurrentUser")
   }
 
-  const today = new Date().getFullYear() + `-` + (new Date().getMonth() + 1) + `-` + String(new Date().getDate()).padStart(2, `0`);
+  const year = new Date().getFullYear();
+  const month = String(new Date().getMonth() + 1).padStart(2, '0');
+  const day = String(new Date().getDate()).padStart(2, '0');
+  const today = `${year}-${month}-${day}`;
   const [taskNumber, setTaskNumber] = useState(0)
 
   const TaskNumber = () => {

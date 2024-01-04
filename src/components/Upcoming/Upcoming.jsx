@@ -8,8 +8,20 @@ function Upcoming({ setShowAddTask, setSelectedTask, showAddTask }) {
   const dispatch = useDispatch();
   let tasks = useSelector(state => state?.lists.tasks)
   let lists = useSelector(state => state?.lists.lists)
-  const today = new Date().getFullYear() + `-` + (new Date().getMonth() + 1) + `-` + String(new Date().getDate()).padStart(2, `0`);
-  const tomorrow = new Date().getFullYear() + `-` + (new Date().getMonth() + 1) + `-` + String(new Date().getDate() + 1).padStart(2, `0`);
+
+  //today
+  const year = new Date().getFullYear();
+  const month = String(new Date().getMonth() + 1).padStart(2, '0');
+  const day = String(new Date().getDate()).padStart(2, '0');
+  const today = `${year}-${month}-${day}`;
+
+  //tomorrow
+  const date = new Date();
+  date.setDate(date.getDate() + 1);
+
+  const tomorrow = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`;
+
+  console.log(tomorrow);
 
   const handleAddTask = () => {
     setSelectedTask(null)
@@ -288,7 +300,7 @@ function Upcoming({ setShowAddTask, setSelectedTask, showAddTask }) {
                             <i className="fa-solid fa-chevron-right"></i>
                           </div>
                         </div>
-                        <div className='task-tools'>                          
+                        <div className='task-tools'>
                           <div className="task-tools-date">
                             <div>
                               <i className="fa-solid fa-calendar-xmark"></i>
@@ -346,7 +358,7 @@ function Upcoming({ setShowAddTask, setSelectedTask, showAddTask }) {
                             <i className="fa-solid fa-chevron-right"></i>
                           </div>
                         </div>
-                        <div className='task-tools'>                          
+                        <div className='task-tools'>
                           <div className="task-tools-date">
                             <div>
                               <i className="fa-solid fa-calendar-xmark"></i>

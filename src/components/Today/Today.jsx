@@ -8,7 +8,11 @@ function Today({ setShowAddTask, setSelectedTask }) {
     let tasks = useSelector(state => state?.lists.tasks)
     let lists = useSelector(state => state?.lists.lists)
     const dispatch = useDispatch()
-    const today = new Date().getFullYear() + `-` + (new Date().getMonth() + 1) + `-` + String(new Date().getDate()).padStart(2, `0`);
+    const year = new Date().getFullYear();
+    const month = String(new Date().getMonth() + 1).padStart(2, '0');
+    const day = String(new Date().getDate()).padStart(2, '0');
+    const today = `${year}-${month}-${day}`;
+    
     const [taskNumber, setTaskNumber] = useState(0)
 
 
@@ -41,7 +45,7 @@ function Today({ setShowAddTask, setSelectedTask }) {
     }
     useEffect(() => {
         TaskNumber();
-    }, [tasks]);
+    }, [tasks]); 
     ////
 
     return (
@@ -58,7 +62,7 @@ function Today({ setShowAddTask, setSelectedTask }) {
                     </div>
                     <ul className='Today-block-ul'>
                         {
-                            tasks.map((task) => {
+                           tasks && tasks.map((task) => {
                                 if (task.date === today && !task.checked) {
                                     return (
                                         <li key={task.id || 'default-key'} onClick={() => handleAddShow(task)}>
@@ -101,7 +105,7 @@ function Today({ setShowAddTask, setSelectedTask }) {
                             })
                         }
                         {
-                            tasks.map(task => {
+                            tasks && tasks.map((task) => {
                                 if (task.date === today && task.checked) {
                                     return (
                                         <li key={task.id || 'default-key'} onClick={() => handleCheckedTask(task)}>

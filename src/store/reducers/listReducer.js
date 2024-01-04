@@ -208,15 +208,15 @@ const listsSlice = createSlice({
     },
     EDIT_WALL(state, action) {
       const update_wall = {
-        title : action.payload.title,
-        text : action.payload.text,
-        color : action.payload.color,
-        id : action.payload.id
+        title: action.payload.title,
+        text: action.payload.text,
+        color: action.payload.color,
+        id: action.payload.id
       }
       return {
         ...state,
         walls: state.walls.map((wall) => {
-         return  wall.id === action.payload.id ?  update_wall : wall;
+          return wall.id === action.payload.id ? update_wall : wall;
         })
       }
     },
