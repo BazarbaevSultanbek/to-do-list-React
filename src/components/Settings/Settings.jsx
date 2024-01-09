@@ -36,11 +36,11 @@ function Settings({ background, setBackground }) {
             return item;
         });
 
-        if (password.legth >= 8) {
+        if (password.legth >0) {
             localStorage.setItem("CurrentUser", JSON.stringify(updateProfile));
             localStorage.setItem("users", JSON.stringify(updatedUsers));
             setShowModule(false);
-        } else return alert('Password must have at least 8 characters!')
+        }
     };
 
     useEffect(() => {
