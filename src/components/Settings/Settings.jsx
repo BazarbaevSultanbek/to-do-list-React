@@ -35,12 +35,9 @@ function Settings({ background, setBackground }) {
             }
             return item;
         });
-
-        if (password.legth >0) {
             localStorage.setItem("CurrentUser", JSON.stringify(updateProfile));
             localStorage.setItem("users", JSON.stringify(updatedUsers));
             setShowModule(false);
-        }
     };
 
     useEffect(() => {
